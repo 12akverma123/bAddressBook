@@ -31,7 +31,7 @@ pipeline {
 
         stage('Deployment') {
             steps {
-                sh 'sshpass -p "staaragile" scp target/addressbook.war staaragile@172.31.35.210:/home/staragile/apache-tomcat-9.0.85/webapps'
+                sh 'sshpass -p "staaragile" scp target/addressbook.war staaragile@172.31.40.32:/home/staragile/apache-tomcat-9.0.85/webapps'
             }
         }
     }
