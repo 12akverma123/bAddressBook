@@ -14,11 +14,10 @@ pipeline {
                         checkout scm
                 }
         }
-        stages('find username'){
-                steps{
+        stage('find username'){
+                steps {
                     username
                     pwd
-                    ls
                 }
         }
 
